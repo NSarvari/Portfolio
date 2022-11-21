@@ -12,7 +12,7 @@
     "server": "nodemon server.js",
     "client": "npm start client",
     "dev": "concurrently \"npm run  server\" \"npm run client\"",
-    "heroku-postbuild": "npm install && cd client && npm install && npm run build"
+    "heroku-postbuild": "npm install --force && cd client && npm install --force && npm run build"
   },
   "repository": {
     "type": "git",
