@@ -10,7 +10,7 @@
     "start": "node./server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server.js",
-    "client": "npm start --prefix client",
+    "client": "npm start client",
     "dev": "concurrently \"npm run  server\" \"npm run client\"",
     "heroku-build": "NPM_CONFIG_PRODUCTION=false npm install client && npm run build client"
   },
